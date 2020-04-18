@@ -1,0 +1,12 @@
+[Unit]
+Description=ZEG Teknoloji Cikis Cihazi İslemleri
+After=multi-user.target
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=15
+ExecStart=/usr/bin/python2.7 /home/pi/Desktop/attandance_system2/read.py
+
+[Install]
+WantedBy=multi-user.target
